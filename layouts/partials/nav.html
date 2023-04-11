@@ -1,0 +1,7 @@
+<nav class="mt-6">
+    <ul id="nav" class="flex flex-row">
+        {{ range site.Menus.nav }}
+        <li class="mr-6"><a href=" {{ .URL }}" class="text-lg font-bold">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+</nav>
