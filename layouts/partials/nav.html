@@ -1,5 +1,6 @@
 <nav class="mt-6">
-    <ul id="nav" class="flex flex-row">
+    <ul id="nav" class="flex flex-row justify-between">
+        <li class="mr-6 rotate"><a href="/index.html" class="text-lg"><h3>Thank You Come Again</h3></a></li>
         {{ range site.Menus.nav }}
         <li class="mr-6"><a href=" {{ .URL }}" class="text-lg font-bold">{{ .Name }}</a></li>
         {{ end }}

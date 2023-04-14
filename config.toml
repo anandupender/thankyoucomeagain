@@ -4,13 +4,7 @@ title = 'Thank You Come Again'
 
 [menu]
     [[menu.nav]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-
-    [[menu.nav]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 2
+    weight = 1
