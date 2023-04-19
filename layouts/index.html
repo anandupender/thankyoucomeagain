@@ -1,12 +1,70 @@
 {{ define "main" }}
 
-    <div class="flex flex-col justify-center items-center h-screen max-w-screen-sm m-auto">
-        <div class="text-5xl font-display">
-            &nbsp;&nbsp;&nbsp;a hospitality-centric &nbsp;approach to creating  &nbsp;&nbsp;&nbsp;kickass brands & websites
+    <div class="flex flex-col justify-center items-center m-auto mt-12">
+        <div class="flex flex-col items-center" id="rotate-container">
+            <h1 class="text-5xl md:text-8xl ml-8">Thank You</h1>
+            <h1 class="text-5xl md:text-8xl" id="come-again">Come Again</h1>
         </div>
-        <p class="text-base text-justify mt-3 mb-12 max-w-md">The SF-based design practice of Anand Upender, helping your teams create kickass brands, websites, and strategy.</p>
+        <p class="text-lg text-justify text-justify mt-8 mb-12 max-w-md">The SF-based design practice of <span class="anand-image">Anand Upender </span> . We partner with groups that create a more connected, human-centered, and beautiful planet. We bring creativity to create bespoke online experiences that organically draw more people to your brand. We’ve worked behind the scenes as Operators, Event Planners, and Line Cooks and bring this to our work as Designers.</p>
+
+        <h1 class="mb-4 mt-8">Past Clients</h1>
+        <div class="flex flex-col w-auto justify-between md:flex-row">
+            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/lacocina.png" alt="">
+            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/ted.png" alt="">
+            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/dschool.png" alt="">
+            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/ysc.png" alt="">
+            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/ideo.png" alt="">
+        </div>
+
+    </div>
+    
+    <style>
+        #rotate-container{
+            transform-style: preserve-3d;
+            transform-origin: center;
+            animation: rotateSwing 1600ms ease-in-out infinite alternate;
+        }
+        #come-again{
+            transform: rotateX(90deg);
+        }
+    
+        @keyframes rotateSwing {
+            0%{
+                transform: rotateX(0deg) rotateZ(-10deg); 
+            }
+            25%{
+                transform: rotateX(0deg) rotateZ(-10deg); 
+            }
+            75%{
+                transform: rotateX(-90deg) rotateZ(-10deg);
+            }
+            100%{
+                transform: rotateX(-90deg) rotateZ(-10deg);
+            }
+        }
+    </style>
+
+        <!-- <div class="grid grid-cols-3">
+            <div class="w-full text-2xl flex flex-col">
+                <h2>Just Some Folks</h2>
+                <img src="/img/jsf.png" alt="" srcset="">
+            </div>
+            <div class="w-full text-2xl">
+                La Cocina
+            </div>
+            <div class="w-full text-2xl">
+                TED
+            </div>
+            <div class="w-full text-2xl">
+                AnandUpender.com
+            </div>
+            <div class="w-full text-2xl">
+                Besharam
+            </div>
+        </div> -->
         <!-- <h4>☞ tycadesign.com</h4>
         <h4>☞ @tyca.design</h4> -->
-    </div>
 
 {{ end }}
+
+

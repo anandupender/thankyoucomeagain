@@ -96,16 +96,32 @@
   font-display: swap;
   font-style: normal; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   background-color: white;
   color: black;
-  font-family: ClashGrotesk-Regular, sans-serif; }
+  font-family: ClashGrotesk-Regular, sans-serif;
+  cursor: url("/img/finger.svg"), auto; }
 
 h1, h2, h3, h4 {
   font-family: ClashDisplay-Bold, sans-serif; }
 
 .font-display {
   font-family: ClashDisplay-Regular, sans-serif; }
+
+.anand-image:after {
+  content: url("/img/anand.png");
+  background-image: url("/img/anand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  content: "";
+  margin-bottom: -8px; }
 
 .rotate {
   animation: rotate 10000ms ease 2000ms infinite forwards; }
