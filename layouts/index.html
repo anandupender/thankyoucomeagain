@@ -1,21 +1,53 @@
 {{ define "main" }}
 
     <div class="flex flex-col justify-center items-center m-auto mt-12">
-        <div class="flex flex-col items-center" id="rotate-container">
-            <h1 class="text-5xl md:text-8xl ml-8">Thank You</h1>
-            <h1 class="text-5xl md:text-8xl" id="come-again">Come Again</h1>
-        </div>
-        <p class="text-lg text-justify text-justify mt-8 mb-12 max-w-md">The SF-based design practice of <span class="anand-image">Anand Upender </span> . We partner with groups that create a more connected, human-centered, and beautiful planet. We bring creativity to create bespoke online experiences that organically draw more people to your brand. We’ve worked behind the scenes as Operators, Event Planners, and Line Cooks and bring this to our work as Designers.</p>
+        <section>
+            <div class="flex flex-col items-center" id="rotate-container">
+                <h1 class="text-5xl md:text-8xl ml-8">Thank You</h1>
+                <h1 class="text-5xl md:text-8xl" id="come-again">Come Again</h1>
+            </div>
+            <p class="text-xl text-justify text-justify m-auto mt-8 mb-20 max-w-md">Thank You Come Again is the SF-based design practice of <span class="anand-image">Anand Upender </span> . We build bespoke online experiences that drive organic growth. Our team has  diverse backgrounds in creative technology, event-planning, strategy and operations.</p>
 
-        <h1 class="mb-4 mt-8">Past Clients</h1>
-        <div class="flex flex-col w-auto justify-between md:flex-row">
-            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/lacocina.png" alt="">
-            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/ted.png" alt="">
-            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/dschool.png" alt="">
-            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/ysc.png" alt="">
-            <img class="w-24 mb-6 mx-12 object-contain grayscale" src="/img/ideo.png" alt="">
-        </div>
+        </section>
 
+        <section>
+            <h1 class="mb-6 mt-8 text-2xl">Past Clients</h1>
+            <div class="inline-grid grid-rows-1 grid-cols-2 md:grid-cols-6 gap-12 w-auto items-center">
+                <img class="w-24 mb-6 object-contain grayscale" src="/img/lacocina.png" alt="">
+                <img class="w-24 mb-6 object-contain grayscale" src="/img/ted.png" alt="">
+                <img class="w-24 mb-6 object-contain grayscale" src="/img/dschool.png" alt="">
+                <img class="w-24 mb-6 object-contain grayscale" src="/img/ysc.png" alt="">
+                <img class="w-24 mb-6 object-contain grayscale" src="/img/ideo.png" alt="">
+                <img class="w-24 mb-6 object-contain grayscale" src="/img/jsf.png" alt="">
+            </div>
+    
+        </section>
+
+        <section class="my-48">
+            <h1 class="text-3xl m-auto text-center">
+                TYCA uses service design, animation, and strategy to solve pressing problems and convey beautiful stories.
+            </h1>
+        </section>
+
+        <section class="max-w-screen-md">
+            <h1 class="mb-4 text-2xl">Past Challenges</h1>
+            <ul>
+                <li class="text-3xl mb-8">
+                    We helped a journalism organization build a social platform that could save the business model of local news.
+                </li>
+                <li class="text-3xl mb-8">
+                    We supported women of color owned restauranteurs in managing their complex technology sales stacks.
+                </li>
+                <li class="text-3xl mb-8">
+                    We created a flashy yet inclusive brand and website for a SF food popup.
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-96">
+            ...
+        </section>
+    
     </div>
     
     <style>
@@ -23,6 +55,13 @@
             transform-style: preserve-3d;
             transform-origin: center;
             animation: rotateSwing 1600ms ease-in-out infinite alternate;
+        }
+        #rotate-container h1{
+            /* background-color: black;
+            color: white; */
+            background-color: white;
+            border: 6px solid black;
+            padding: 8px
         }
         #come-again{
             transform: rotateX(90deg);
