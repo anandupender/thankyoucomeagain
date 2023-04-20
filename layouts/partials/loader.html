@@ -263,11 +263,10 @@
     let svgs = parentContainer.children;
     let i = 0;
 
-    window.setTimeout(firstCall, 800)
+    window.setTimeout(firstCall, 700)
 
     function firstCall(){
         window.setTimeout(showSVG, 100)
-
     }
     function showSVG(iter){
         if(i < svgs.length){
@@ -280,7 +279,7 @@
                 window.setTimeout(showSVG, 100)
             }
             else{
-                window.setTimeout(showSVG, 1000)
+                window.setTimeout(showSVG, 500)
             }
         }else{
             // parentContainer.style.display = "none";
