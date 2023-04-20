@@ -1,5 +1,3 @@
-console.log("hi");
-
 window.addEventListener("DOMContentLoaded", (event) => {
     const contactButton = document.querySelector("#contact-button");
     if (contactButton) {

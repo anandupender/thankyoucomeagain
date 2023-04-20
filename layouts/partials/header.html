@@ -3,11 +3,14 @@
     {{ hugo.Generator }}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
-    <meta name="author" content="Alora Labs Inc.">
-    <meta name="image" property="og:image" content="https://d33wubrfki0l68.cloudfront.net/516ee96157920c8dffd9b26dc77c90d3254463df/8266f/project/mero-comfort/feature_hu8ccb9e0667c33f647deb65e8128330f7_5788401_688x460_fill_q100_box_center.jpg">
+    <meta name="author" content="Anand Upender">
 
     <title>{{ .Title }}</title>
-    {{ template "_internal/opengraph.html" . }}
+
+    <meta property="og:image" content="/img/share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate icon" href="/favicon.ico">
@@ -16,6 +19,8 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/main.js"></script>
 
 

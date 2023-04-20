@@ -97,19 +97,27 @@
   font-style: normal; }
 
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 body {
   background-color: white;
   color: black;
   font-family: ClashGrotesk-Regular, sans-serif;
-  cursor: url("/img/finger.svg"), auto; }
+  cursor: url("/img/finger.svg"), auto;
+  overflow-y: hidden; }
 
 h1, h2, h3, h4 {
   font-family: ClashDisplay-Bold, sans-serif; }
 
 .font-display {
   font-family: ClashDisplay-Regular, sans-serif; }
+
+.svg-animation {
+  display: none; }
+
+#svg-container {
+  transition: height 600ms ease; }
 
 .anand-image:after {
   content: url("/img/anand.png");

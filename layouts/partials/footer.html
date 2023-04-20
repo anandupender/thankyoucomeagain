@@ -1,7 +1,7 @@
 <!-- <div>This is a Footer</div> -->
 
 <div class=" absolute left-0 w-screen bg-black text-white p-12 flex flex-row justify-between items-center">
-    <a href="/index.html" class="text-3xl">
+    <a href="/index.html" class="text-3xl stretch-animation">
         <h3>
             TY
         </h3>
@@ -19,3 +19,25 @@
         <div>built with Hugo</div>
     </div>
 </div>
+
+<style>
+    .stretch-animation{
+        transform-origin: left;
+        animation: stretch 3s ease infinite forwards;    
+    }
+    @keyframes stretch {
+        0%{
+            transform: scaleX(1);
+        }
+        20%{
+            transform: scaleX(1.1);
+        }
+        95%{
+            transform: scaleX(3);
+        }
+        100%{
+            transform: scaleX(1);
+        }
+        
+    }
+</style>
