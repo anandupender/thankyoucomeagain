@@ -2,9 +2,3 @@ baseURL = '//thankyoucomeagain.netlify.app'
 languageCode = 'en-us'
 title = 'Thank You Come Again'
 
-[menu]
-    [[menu.nav]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 1
