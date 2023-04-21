@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url("../fonts/ClashDisplay-Variable.woff2") format("woff2"), url("../fonts/ClashDisplay-Variable.woff") format("woff"), url("../fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url("../fonts/ClashDisplay-Extralight.woff2") format("woff2"), url("../fonts/ClashDisplay-Extralight.woff") format("woff"), url("../fonts/ClashDisplay-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url("../fonts/ClashDisplay-Light.woff2") format("woff2"), url("../fonts/ClashDisplay-Light.woff") format("woff"), url("../fonts/ClashDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url("../fonts/ClashDisplay-Regular.woff2") format("woff2"), url("../fonts/ClashDisplay-Regular.woff") format("woff"), url("../fonts/ClashDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url("../fonts/ClashDisplay-Medium.woff2") format("woff2"), url("../fonts/ClashDisplay-Medium.woff") format("woff"), url("../fonts/ClashDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url("../fonts/ClashDisplay-Semibold.woff2") format("woff2"), url("../fonts/ClashDisplay-Semibold.woff") format("woff"), url("../fonts/ClashDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url("../fonts/ClashDisplay-Bold.woff2") format("woff2"), url("../fonts/ClashDisplay-Bold.woff") format("woff"), url("../fonts/ClashDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashGrotesk-Variable';
+  src: url("../fonts/ClashGrotesk-Variable.woff2") format("woff2"), url("../fonts/ClashGrotesk-Variable.woff") format("woff"), url("../fonts/ClashGrotesk-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashGrotesk-Extralight';
+  src: url("../fonts/ClashGrotesk-Extralight.woff2") format("woff2"), url("../fonts/ClashGrotesk-Extralight.woff") format("woff"), url("../fonts/ClashGrotesk-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashGrotesk-Light';
+  src: url("../fonts/ClashGrotesk-Light.woff2") format("woff2"), url("../fonts/ClashGrotesk-Light.woff") format("woff"), url("../fonts/ClashGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashGrotesk-Regular';
+  src: url("../fonts/ClashGrotesk-Regular.woff2") format("woff2"), url("../fonts/ClashGrotesk-Regular.woff") format("woff"), url("../fonts/ClashGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashGrotesk-Medium';
+  src: url("../fonts/ClashGrotesk-Medium.woff2") format("woff2"), url("../fonts/ClashGrotesk-Medium.woff") format("woff"), url("../fonts/ClashGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashGrotesk-Semibold';
+  src: url("../fonts/ClashGrotesk-Semibold.woff2") format("woff2"), url("../fonts/ClashGrotesk-Semibold.woff") format("woff"), url("../fonts/ClashGrotesk-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ClashGrotesk-Bold';
+  src: url("../fonts/ClashGrotesk-Bold.woff2") format("woff2"), url("../fonts/ClashGrotesk-Bold.woff") format("woff"), url("../fonts/ClashGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+body {
+  background-color: white;
+  color: black;
+  font-family: ClashGrotesk-Regular, sans-serif;
+  cursor: url("/img/finger.svg"), auto;
+  overflow-y: hidden; }
+
+h1, h2, h3, h4 {
+  font-family: ClashDisplay-Bold, sans-serif; }
+
+.font-display {
+  font-family: ClashDisplay-Regular, sans-serif; }
+
+.svg-animation {
+  display: none; }
+
+#svg-container {
+  transition: height 600ms ease; }
+
+.anand-image:after {
+  content: url("/img/anand.png");
+  background-image: url("/img/anand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  content: "";
+  margin-bottom: -8px; }
+
+.rotate {
+  animation: rotate 10000ms ease 2000ms infinite forwards; }
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg); }
+  10% {
+    transform: rotateY(360deg); }
+  100% {
+    transform: rotateY(360deg); } }

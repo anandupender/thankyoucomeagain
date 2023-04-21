@@ -1,115 +1,133 @@
 {{ define "main" }}
-   <!-- this is content from the MD file -->
-   <!-- {{ .Content }} -->
-   <div class="flex flex-col justify-center items-center m-auto mt-12">
+<!-- this is content from the MD file -->
+<!-- {{ .Content }} -->
+<div class="flex flex-col justify-center items-center m-auto mt-12">
+  <section class="max-w-screen-md mb-48 tilt">
+    <h1 class="text-8xl md:text-9xl p-8 bg-white border-rainbow">About</h1>
+  </section>
 
-        <section class="max-w-screen-md mb-48 tilt">
-            <h1 class="text-8xl md:text-9xl p-8 bg-white border-rainbow">About</h1>
-        </section>
+  <section class="max-w-screen-md mb-24" data-aos="fade-up">
+    <h1 class="mb-4 text-2xl">Our Values</h1>
+    <h2 class="text-4xl mb-8">
+      We... 1. Embrace Hybridity&nbsp;&nbsp;&nbsp;2. Put Culture
+      First&nbsp;&nbsp;&nbsp;3. Share Work Often&nbsp;&nbsp;&nbsp;4. Lean Quirky
+      not Corporate&nbsp;&nbsp;&nbsp;5. Communicate
+      Transparently&nbsp;&nbsp;&nbsp;6. Practice What We
+      Preach&nbsp;&nbsp;&nbsp;7. Gather Frequently
+    </h2>
+  </section>
 
-        <section class="max-w-screen-md mb-24"  data-aos="fade-up">
-            <h1 class="mb-4 text-2xl">Our Values</h1>
-            <h2 class="text-4xl mb-8">
-                We...
-                1. Embrace Hybridity&nbsp;&nbsp;&nbsp;2. Put Culture First&nbsp;&nbsp;&nbsp;3. Share Work Often&nbsp;&nbsp;&nbsp;4. Lean Quirky not Corporate&nbsp;&nbsp;&nbsp;5. Communicate Transparently&nbsp;&nbsp;&nbsp;6. Practice What We Preach&nbsp;&nbsp;&nbsp;7. Gather Frequently  
-            </h2>
-     
-        </section>
+  <section class="mb-24 max-w-screen-md">
+    <img src="/img/gallery/5.jpg" alt="" srcset="" />
+  </section>
 
-        <section class="mb-24 max-w-screen-md">
-            <img src="/img/gallery/5.jpg" alt="" srcset="">
-        </section>
-
-        <section class="max-w-screen-md mb-24"  data-aos="fade-up">
-            <h1 class="mb-4 text-2xl">Thank You Come Again, the name</h1>
-            <div class="text-xl mb-4">
-               ☞  our wish to humbly serve others and support the class of essential workers who serve us.
-            </div>
-            <div class="text-xl mb-4">
-                ☞  a reclaiming on the racialized bullying against a brown character in the Simpsons.
-            </div>
-            <div class="text-xl mb-4">
-                ☞  long for "TYCA".
-            </div>
-        </section>
-
-        <section class="mb-36 max-w-screen-md">
-            <h1 class="mb-8 text-2xl">Our Advisors</h1>
-            <div class="grid grid-cols-2 gap-12 md:grid-cols-3">
-                <div class="w-full text-2xl flex flex-col">
-                    <img class="mb-4 rounded-full" src="/img/soh.png" alt="" srcset="">
-                    <h2>Soh Kim</h2>
-                    <div class="text-lg">Executive Director of Food Design Research at Stanford University
-                    </div>
-                </div>
-                <div class="w-full text-2xl flex flex-col">
-                    <img class="mb-4 rounded-full" src="/img/lacocina.png" alt="" srcset="">
-                    <h2>Michelle Minori</h2>
-                    <div class="text-lg">asldfkjasd fl;ksafd ;kasfj ;lkaf ;laksdj fl;aks df</div>
-                </div>
-                <div class="w-full text-2xl flex flex-col">
-                    <img class="mb-4 rounded-full" src="/img/lacocina.png" alt="" srcset="">
-                    <h2>Michelle Minori</h2>
-                    <div class="text-lg">asldfkjasd fl;ksafd ;kasfj ;lkaf ;laksdj fl;aks df</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="max-w-screen-md mb-56"  data-aos="fade-up">
-            <h1 class="mb-4 text-5xl w-full text-center">Ready to start the conversation?!</h1>
-            <button id="emailCopy" class="p-4 bg-black text-white w-full mt-8 text-2xl"><h1>Send us an email</h1></button>
-        </section>
-
+  <section class="max-w-screen-md mb-24" data-aos="fade-up">
+    <h1 class="mb-4 text-2xl">Thank You Come Again, the name</h1>
+    <div class="text-xl mb-4">
+      ☞ our wish to humbly serve others and support the class of essential
+      workers who serve us.
     </div>
+    <div class="text-xl mb-4">
+      ☞ a reclaiming on the racialized bullying against a brown character in the
+      Simpsons.
+    </div>
+    <div class="text-xl mb-4">☞ long for "TYCA".</div>
+  </section>
 
-    <style>
-        .tilt{
-            transform: rotateZ(-5deg);
-        }
-        .border-rainbow{
-            background-color: white;
-            /* padding: 8px; */
-            position: relative;
-            border-radius: 6px;
-        }
+  <section class="mb-36 max-w-screen-md">
+    <h1 class="mb-8 text-2xl">Our Advisors</h1>
+    <div class="grid grid-cols-2 gap-12 md:grid-cols-3">
+      <div class="w-full text-2xl flex flex-col">
+        <img class="mb-4 rounded-full" src="/img/soh.png" alt="" srcset="" />
+        <h2>Soh Kim</h2>
+        <div class="text-lg">
+          Executive Director of Food Design Research at Stanford University
+        </div>
+      </div>
+      <div class="w-full text-2xl flex flex-col">
+        <img class="mb-4 rounded-full" src="/img/phil.jpg" alt="" srcset="" />
+        <h2>Phil Saneski</h2>
+        <div class="text-lg">Culinary Innovation Specialist, Chef</div>
+      </div>
+      <div class="w-full text-2xl flex flex-col">
+        <img
+          class="mb-4 rounded-full"
+          src="/img/lacocina.png"
+          alt=""
+          srcset=""
+        />
+        <h2>Michelle Minori</h2>
+        <div class="text-lg">
+          asldfkjasd fl;ksafd ;kasfj ;lkaf ;laksdj fl;aks df
+        </div>
+      </div>
+    </div>
+  </section>
 
-        .border-rainbow:after {
-            content: '';
-            position: absolute;
-            top: calc(-1 * 6px);
-            left: calc(-1 * 6px);
-            height: calc(100% + 6px * 2);
-            width: calc(100% + 6px * 2);
-            background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-            border-radius: calc(2 * 6px);
-            z-index: -1;
-            animation: animatedgradient 3s ease alternate infinite;
-            background-size: 300% 300%;
-        }
+  <section class="max-w-screen-md mb-56" data-aos="fade-up">
+    <h1 class="mb-4 text-5xl w-full text-center">
+      Ready to start the conversation?!
+    </h1>
+    <button id="emailCopy" class="p-4 bg-black text-white w-full mt-8 text-2xl">
+      <h1>Send us an email</h1>
+    </button>
+  </section>
+</div>
 
+<style>
+  .tilt {
+    transform: rotateZ(-5deg);
+  }
+  .border-rainbow {
+    background-color: white;
+    /* padding: 8px; */
+    position: relative;
+    border-radius: 6px;
+  }
 
-        @keyframes animatedgradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+  .border-rainbow:after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * 6px);
+    left: calc(-1 * 6px);
+    height: calc(100% + 6px * 2);
+    width: calc(100% + 6px * 2);
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+    border-radius: calc(2 * 6px);
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
 
-    </style>
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
 
-    <!--  put this in Config TOML -->
+<!--  put this in Config TOML -->
 <!-- [menu]
     [[menu.nav]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 1 -->
-
-
 
 {{ end }}
