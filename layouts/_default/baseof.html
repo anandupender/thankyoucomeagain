@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
+  {{ partial "header.html" . }}
 
-    {{ partial "header.html" . }}
+  <body id="body" class="px-7 m-w-full">
+    {{ partial "partials/loader.html"}} {{ partial "nav.html" . }}
 
-    <body id="body" class="px-7 m-w-full">
-        {{ partial "partials/loader.html"}}
+    <main id="content">{{ block "main" . }}{{ end }}</main>
 
-        {{ partial "nav.html" . }}
+    {{ partial "footer.html" . }}
 
-        <main id="content">
-            {{ block "main" . }}{{ end }}
-        </main>
-
-        {{ partial "footer.html" . }}
-
-    </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>

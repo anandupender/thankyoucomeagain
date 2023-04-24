@@ -104,7 +104,7 @@ body {
   background-color: white;
   color: black;
   font-family: ClashGrotesk-Regular, sans-serif;
-  cursor: url("/img/finger.svg"), auto;
+  cursor: url("/img/finger.svg") 25 15, auto;
   overflow-y: hidden; }
 
 h1, h2, h3, h4 {
@@ -118,6 +118,10 @@ h1, h2, h3, h4 {
 
 .svg-animation {
   display: none; }
+
+nav {
+  position: relative;
+  z-index: 10; }
 
 #svg-container {
   transition: height 600ms ease; }
@@ -136,6 +140,21 @@ h1, h2, h3, h4 {
 
 .rotate {
   animation: rotate 10000ms ease 2000ms infinite forwards; }
+
+#canvas {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  margin: 0;
+  align-content: flex-start;
+  z-index: 0; }
+
+.pixel {
+  background-color: transparent;
+  transition: background-color 300ms ease; }
 
 @keyframes rotate {
   0% {
