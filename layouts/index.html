@@ -152,7 +152,7 @@
         <img class="absolute" style="width:48px; top:62px; left:57px" src="/img/check.svg" alt="" srcset="">
         <img class="absolute object-cover rotate360" src="/img/CheckText.png" alt="" srcset="">
       </div>
-      <div class="text-xl max-w-sm">We work to create affordable options for folks working in or operating <span class="bold">restaurants and hospitality businesses</span>.</div>
+      <div class="text-xl max-w-sm flex-1">We work hard to create affordable options for <span class="bold">restaurant owners, nonprofits, and minority-owned businesses</span>.</div>
     </div>
   </section>
 </div>
@@ -161,7 +161,7 @@
   #rotate-container {
     transform-style: preserve-3d;
     transform-origin: center;
-    animation: rotateSwing 5000ms ease-in-out infinite forwards;
+    animation: rotateSwing 1750ms ease-in-out infinite alternate;
   }
   #rotate-container h1 {
     /* background-color: black;
@@ -175,51 +175,20 @@
   }
 
   @keyframes rotateSwing {
-    0%{
-      transform: rotateX(-45deg) rotateZ(-10deg);
-    }
-    8% {
+    0% {
       transform: rotateX(0deg) rotateZ(-10deg);
     }
-    10% {
+    25% {
       transform: rotateX(0deg) rotateZ(-10deg);
     }
-    26% {
+    75% {
       transform: rotateX(-90deg) rotateZ(-10deg);
     }
-    28% {
+    100% {
       transform: rotateX(-90deg) rotateZ(-10deg);
-    }
-    36%{
-      transform: rotateX(-45deg) rotateZ(-10deg);
-    }
-    100%{
-      transform: rotateX(-45deg) rotateZ(-10deg);
     }
   }
 </style>
-
-<!-- <div class="grid grid-cols-3">
-            <div class="w-full text-2xl flex flex-col">
-                <h2>Just Some Folks</h2>
-                <img src="/img/jsf.png" alt="" srcset="">
-            </div>
-            <div class="w-full text-2xl">
-                La Cocina
-            </div>
-            <div class="w-full text-2xl">
-                TED
-            </div>
-            <div class="w-full text-2xl">
-                AnandUpender.com
-            </div>
-            <div class="w-full text-2xl">
-                Besharam
-            </div>
-        </div> -->
-<!-- <h4>☞ tycadesign.com</h4>
-        <h4>☞ @tyca.design</h4> -->
-
 <script src="/js/pixels.js"></script>
 
 {{ end }}
