@@ -151,6 +151,9 @@ nav {
 .rotate {
   animation: rotate 10000ms ease 2000ms infinite forwards; }
 
+.rotate360 {
+  animation: rotate360 10000ms linear infinite forwards; }
+
 #canvas {
   position: fixed;
   top: 0;
@@ -173,3 +176,9 @@ nav {
     transform: rotateY(360deg); }
   100% {
     transform: rotateY(360deg); } }
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
