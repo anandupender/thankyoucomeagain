@@ -1,4 +1,6 @@
 baseURL = '//thankyoucomeagain.netlify.app'
 languageCode = 'en-us'
 title = 'Thank You Come Again'
+[params]
+     Description = "Thank You Come Again is like your in house design team"
 
