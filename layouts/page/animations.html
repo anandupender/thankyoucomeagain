@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    {{ $style := resources.Get "sass/main.scss" | toCSS | fingerprint}}
+    <link
+      rel="stylesheet"
+      href="{{ $style.RelPermalink }}"
+      integrity="{{ $style.Data.Integrity }}"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!-- SCROLLING ROWS ANIMATION -->
+    <div id="animation1" class="animation">
+        <div class="row first">
+            <h1 class="innerText speed1">
+                Thank You Come Again
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed2">
+                TYCA is like an In-House Design Team for your next big idea.
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed3">
+                We’ve worked behind the scenes as Operators, Event Planners, and Line Cooks to bring a sense of Service to our work as Designers.
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed4">
+                “Thank You Come Again”, or TYCA, is a playful reclaiming of the racialized catchphrase of Simpsons character, Apu. Using this name creates space to question and reimagine South Asian stereotypes and is an intentional celebration of South Asian creativity in service of society.
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed2">
+                TYCA is like an In-House Design Team for your next big idea.
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed3">
+                We’ve worked behind the scenes as Operators, Event Planners, and Line Cooks to bring a sense of Service to our work as Designers.
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed4">
+                “Thank You Come Again”, or TYCA, is a playful reclaiming of the racialized catchphrase of Simpsons character, Apu. Using this name creates space to question and reimagine South Asian stereotypes and is an intentional celebration of South Asian creativity in service of society.        </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed2">
+                TYCA is like an In-House Design Team for your next big idea.
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed3">
+                We’ve worked behind the scenes as Operators, Event Planners, and Line Cooks to bring a sense of Service to our work as Designers.        </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed4">
+                “Thank You Come Again”, or TYCA, is a playful reclaiming of the racialized catchphrase of Simpsons character, Apu. Using this name creates space to question and reimagine South Asian stereotypes and is an intentional celebration of South Asian creativity in service of society.        </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed2">
+                TYCA is like an In-House Design Team for your next big idea.
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed3">
+                We’ve worked behind the scenes as Operators, Event Planners, and Line Cooks to bring a sense of Service to our work as Designers.        </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed4">
+                “Thank You Come Again”, or TYCA, is a playful reclaiming of the racialized catchphrase of Simpsons character, Apu. Using this name creates space to question and reimagine South Asian stereotypes and is an intentional celebration of South Asian creativity in service of society.        </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed2">
+                TYCA is like an In-House Design Team for your next big idea.
+            </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed3">
+                We’ve worked behind the scenes as Operators, Event Planners, and Line Cooks to bring a sense of Service to our work as Designers.        </h1>
+        </div>
+        <div class="row">
+            <h1 class="innerText speed4">
+                “Thank You Come Again”, or TYCA, is a playful reclaiming of the racialized catchphrase of Simpsons character, Apu. Using this name creates space to question and reimagine South Asian stereotypes and is an intentional celebration of South Asian creativity in service of society.        </h1>
+        </div>
+    </div>
+
+    <!-- BOUNCING BALL ANIMATION -->
+    <div id="animation2" class="animation">
+        <img class="ball" src="/img/circularLogoWhite.png" alt="" srcset="">
+    </div>
+
+    <!-- FLIPPING LOGO ANIMATION -->
+    <div class="animation" id="animation3">
+        <h1 class="text-5xl md:text-8xl ml-8">Thank You</h1>
+        <h1 class="text-5xl md:text-8xl" id="come-again">Come Again</h1>
+    </div>
+    
+    <!-- IMAGES -->
+    <!-- <div id="animation4" class="animation">
+        <section
+        class=""
+        id="gallerySwap"
+      >
+        <img
+          class="h-screen w-screen object-cover m-auto"
+          src="/img/gallery/1.jpg"
+          alt=""
+        />
+        <img
+          class="h-screen w-screen object-cover m-auto hidden"
+          src="/img/gallery/2.jpg"
+          alt=""
+        />
+        <img
+          class="h-screen w-screen object-cover m-auto hidden"
+          src="/img/gallery/3.jpg"
+          alt=""
+        />
+        <img
+          class="h-screen w-screen object-cover m-auto hidden"
+          src="/img/gallery/4.jpg"
+          alt=""
+        />
+        <img
+          class="h-screen w-screen object-cover m-auto hidden"
+          src="/img/gallery/5.jpg"
+          alt=""
+        />
+        <img
+          class="h-screen w-screen object-cover m-auto hidden"
+          src="/img/gallery/6.jpg"
+          alt=""
+        />
+        <img
+          class="h-screen w-screen object-cover m-auto hidden"
+          src="/img/gallery/7.jpg"
+          alt=""
+        />
+        <img
+          class="h-screen w-screen object-cover m-auto hidden"
+          src="/img/gallery/8.jpg"
+          alt=""
+        />
+        <img
+        class="h-screen w-screen object-cover m-auto hidden"
+        src="/img/gallery/9.jpg"
+        alt=""
+      />
+      </section>
+    </div> -->
+
+    <div class="animation">
+        <h1 class="variable">Thank You <br/>Come Again</h1>
+    </div>
+</body>
+<style>
+  html{
+    overflow: hidden;
+  }
+  body{
+    /* font-family: Gratelos; */
+    font-size: 56px;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    /*  COOL PROJECTOR MOUNTING FIX */
+    transform: skewY(3deg) rotateY(38deg); 
+  }
+  .animation{
+    display: none;
+  }
+  #animation1{
+    transform: rotateZ(20deg);
+  }
+  /* SCROLLING ANIMATION */
+  .row{
+    border-bottom: 3px solid white;
+    width: 100vw;
+  }
+  .row:nth-of-type(even){
+    color: yellow;
+  }
+  .innerText{
+    position: relative;
+    animation: move 5s linear infinite forwards;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .row.first{
+    border-top: 3px solid white;
+  }
+  .innerText.speed1{
+    animation-duration: 8s;
+  }
+  .innerText.speed2{
+    animation-duration: 18s;
+  }
+  .innerText.speed3{
+    animation-duration: 22s;
+  }
+  .innerText.speed4{
+    animation-duration: 40s;
+  }
+
+  @keyframes move {
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+  }
+
+  /* BOUNCING BALL ANIMATION */
+  .ball{
+    width: 12vw;
+    position: absolute;
+    animation: moveX 5s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate, rotate 18s linear 0s infinite forwards;
+  }
+    @keyframes moveY {
+        from { top: 0; } to { top: calc(100vh - 12vw); }
+    }
+    @keyframes moveX {
+        from { left: 0; } to { left: calc(100vw - 12vw); }
+    }
+    @keyframes rotate{
+        from { transform: rotate(0deg);} to { transform: rotate(360deg)}
+    }
+
+    /* FLIPPING LOGO ANIMATION */
+    #animation3 {
+        transform-style: preserve-3d;
+        transform-origin: center;
+        animation: rotateSwing 1750ms ease-in-out infinite alternate;
+        margin-top: 32vh;
+        margin-left: calc(50% - 300px);
+    }
+    #animation3 h1 {
+        width: fit-content;
+        background-color: black;
+        border: 6px solid white;
+        padding: 8px;
+    }
+    #come-again {
+        transform: rotateX(90deg);
+    }
+
+    @keyframes rotateSwing {
+        0% {
+            transform: rotateX(0deg) rotateZ(-10deg);
+        }
+        25% {
+            transform: rotateX(0deg) rotateZ(-10deg);
+        }
+        75% {
+            transform: rotateX(-90deg) rotateZ(-10deg);
+        }
+        100% {
+            transform: rotateX(-90deg) rotateZ(-10deg);
+        }
+    }
+
+    /* VARIABLE FONT STRETCH */
+    .variable{
+        font-size: 8vw;
+        font-family: ClashDisplay-Variable;
+        animation: 1s ease-in-out scale alternate infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        line-height: 90%;
+        transform: translate(-50%, -50%);
+    }
+    @keyframes scale {
+        0% {
+            font-weight: 100;
+        }
+        100% {
+            font-weight: 1000;
+        }
+    }
+</style>
+<script src="/js/main.js"></script>
+
+<script>
+    // const mode = "DEV";
+    const mode = "ALTERNATE";
+
+    if(mode == "DEV"){
+        document.querySelectorAll(".animation")[0].style.display = "inline-block";
+    }    
+    else if (mode == "ALTERNATE"){
+        document.querySelector("#animation1").style.display = "inline-block";
+        var iter = 1;
+        var animations = document.querySelectorAll(".animation");
+        var length = animations.length;
+        window.setInterval(changeAnimation, 18000);
+
+        function changeAnimation(){
+            animations[iter].style.display = "inline-block";
+            if(iter == 0){
+                animations[length - 1].style.display = "none";
+            }else{
+                animations[iter - 1].style.display = "none";
+            }
+
+            if(iter == length - 1){
+                iter = 0;
+            }else{
+                iter++;
+            }
+        }
+    }
+
+</script>
+
+</html>

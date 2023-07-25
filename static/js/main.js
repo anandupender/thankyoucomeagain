@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     function copyEmail() {
         var input = document.createElement('input');
-        input.setAttribute('value', "anandupender@gmail.com");
+        input.setAttribute('value', "anand@tycadesign.com");
         document.body.appendChild(input);
         input.select();
         var result = document.execCommand('copy');
@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         }else if(numTimesClicked == 2){
             emailCopyButton.children[0].innerHTML = "You're all good here  👍🏾";
         }else if(numTimesClicked == 3){
-            emailCopyButton.children[0].innerHTML = "fine, here you go: anandupender@gmail.com";
+            emailCopyButton.children[0].innerHTML = "fine, here you go: anand@tycadesign.com";
         }
         numTimesClicked++;
 
