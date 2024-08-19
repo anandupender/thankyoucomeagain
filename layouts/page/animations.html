@@ -174,7 +174,7 @@
     background-color: black;
     color: white;
     /*  COOL PROJECTOR MOUNTING FIX */
-    transform: skewY(3deg) rotateY(38deg); 
+    /* transform: skewY(3deg) rotateY(38deg);  */
   }
   .animation{
     display: none;
@@ -305,7 +305,7 @@
         var iter = 1;
         var animations = document.querySelectorAll(".animation");
         var length = animations.length;
-        window.setInterval(changeAnimation, 18000);
+        window.setInterval(changeAnimation, 12000);
 
         function changeAnimation(){
             animations[iter].style.display = "inline-block";

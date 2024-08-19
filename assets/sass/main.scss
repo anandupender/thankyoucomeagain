@@ -193,7 +193,7 @@ nav{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: black;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -233,7 +233,7 @@ nav{
   flex-wrap: wrap;
   margin: 0;
   align-content: flex-start;
-  z-index: 0;
+  z-index: -1;
 }
 
 .pixel {
@@ -261,4 +261,12 @@ nav{
   100%{
       transform: rotate(360deg); 
   }
+}
+
+.live-site-link{
+  color: blue;
+  transition: 250ms ease all;
+}
+.live-site-link:hover{
+  transform: translateX(8px);
 }
